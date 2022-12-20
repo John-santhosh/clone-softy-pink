@@ -29,7 +29,6 @@ button{
 body{
     /* background: rgb(18, 209, 209); */
     font-size: 16px;
-    height: 35000px;
     font-family: 'Raleway', sans-serif;
 }
 .container{
@@ -589,4 +588,125 @@ section:nth-child(7){
 .blogs button:hover{
     background-color:#e70c72;
     cursor: pointer;
+}
+
+                                        /* contact us */
+.contact{
+    background-color: rgba(59, 59, 221, 0.589);
+}
+
+.contact> div:first-child{
+    width: 50%;
+    margin: auto;
+    height: 200px;
+    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.contact> div:first-child h2{
+    margin-bottom: 1.5rem;
+    text-transform: capitalize;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.contact> div:first-child p{
+    word-spacing: 2px;
+    letter-spacing: 1px;
+}
+
+.cont{
+    width: 400px;
+}
+.contact .content{
+    margin: auto;
+}
+
+.contact .content h2{
+    margin-bottom: 2rem;
+}
+.content address{
+    font-family: inherit;
+    font-style: normal;
+    margin-bottom: 2rem;
+    line-height: 1.7;
+    color:#777;
+}
+
+                        /* form elements */
+
+
+form{
+    background:#e83e8c;
+    margin:auto;
+    text-align: center;
+    
+}
+input{margin: auto; font-family: inherit;font-weight: 700;}
+#fname{
+    width: 45%;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    border:none;
+    box-shadow: ;
+}
+#email{
+    width: 45%;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    border:none;
+    box-shadow: ;
+}
+#yourmsg{
+    width: 70%;
+    border-radius: 1.5rem;
+    padding:.5rem;
+
+}
+
+
+/* footer */
+footer{
+    background: linear-gradient(90deg, rgb(189, 50, 228) 1%, rgb(133, 66, 192) 30%) ;
+}
+footer img{
+    width: 1.5rem;
+    
+    /* border-radius: 1rem; */
+}
+footer div.row{
+    align-items: center;
+    justify-content: center;
+    /* height: 150px; */
+}
+footer div.row div{
+    margin: 2.5rem 1rem;
+    padding: .5rem;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+}
+footer .container > div ~ div{
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+}
+footer p{
+    text-align: center;
+    font-size: 13px;
+    text-transform: uppercase;
+    color:rgb(244, 244, 244);
+    padding: 10rem auto;
+    word-spacing: 2px;
+    /* letter-spacing: 1px; */
+    font-weight: 400;
+}
+footer p small{
+    font-size: 0.89rem;
 }
