@@ -591,19 +591,22 @@ section:nth-child(7){
 }
 
                                         /* contact us */
-.contact{
-    background-color: rgba(59, 59, 221, 0.589);
+.contact .row{
+    margin-top: 5rem;
 }
-
+section:nth-child(9){
+    background: #f1ddffb3;
+    margin: 7rem auto 0 auto;
+    padding-bottom: 10rem;
+}
 .contact> div:first-child{
-    width: 50%;
+    width: 60%;
     margin: auto;
     height: 200px;
     text-align: center;
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
-    margin-bottom: 2rem;
 }
 
 .contact> div:first-child h2{
@@ -617,6 +620,7 @@ section:nth-child(7){
 .contact> div:first-child p{
     word-spacing: 2px;
     letter-spacing: 1px;
+    font-weight: 500;
 }
 
 .cont{
@@ -624,6 +628,7 @@ section:nth-child(7){
 }
 .contact .content{
     margin: auto;
+    margin-top: 0;
 }
 
 .contact .content h2{
@@ -635,40 +640,66 @@ section:nth-child(7){
     margin-bottom: 2rem;
     line-height: 1.7;
     color:#777;
+    font-weight: 500;
 }
 
                         /* form elements */
 
 
-form{
-    background:#e83e8c;
+.form{
     margin:auto;
     text-align: center;
-    
+    width: 700px;
+    /* display: flex;
+    flex-direction: row; */
 }
-input{margin: auto; font-family: inherit;font-weight: 700;}
+
+.form1{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+input{margin: auto; font-family: inherit;font-weight: 700;font-size: 15px;color:grey;}
+textarea{margin: auto; font-family: inherit;font-weight: 700;font-size: 15px;color:grey;}
 #fname{
-    width: 45%;
+    width: 330px;
     padding: 1rem;
     border-radius: 1.5rem;
     border:none;
-    box-shadow: ;
+    margin-right: 1rem;
+
 }
 #email{
-    width: 45%;
+    width: 330px;;
     padding: 1rem;
     border-radius: 1.5rem;
     border:none;
-    box-shadow: ;
 }
 #yourmsg{
-    width: 70%;
+    width: 680px;
     border-radius: 1.5rem;
-    padding:.5rem;
-
+    padding:1rem;
+    margin-top: 2rem;
+    border: none;
 }
 
-
+.form .btn{
+    padding: 1rem 1.5rem;
+    margin-top: 2rem;
+    margin-left: 0;
+    border-radius: 1.5rem ;
+    text-transform: uppercase;
+    background-color:#6610f2;
+    color: #fff;
+    border: none;
+    transition: background .5s;
+    font-weight: 500;
+    text-align: left;
+    cursor: pointer;
+}
+.form .btn:hover{
+    background-color: #e83e8c;
+}
 /* footer */
 footer{
     background: linear-gradient(90deg, rgb(189, 50, 228) 1%, rgb(133, 66, 192) 30%) ;
@@ -689,6 +720,11 @@ footer div.row div{
     border-radius: 50%;
     background-color: white;
     display: flex;
+    transition: .5s all;
+    border: 1px solid white;    
+}
+footer div.row div:hover{
+    background-color:rgba(228, 50, 207, 0.558);
 }
 footer .container > div ~ div{
     display: flex;
@@ -696,6 +732,12 @@ footer .container > div ~ div{
     align-items: center;
     justify-content: center;
     padding: 1.5rem;
+
+}
+footer a{
+    overflow: hidden;
+    height: 24px;
+    width: 24px;
 }
 footer p{
     text-align: center;
@@ -709,4 +751,9 @@ footer p{
 }
 footer p small{
     font-size: 0.89rem;
+}
+
+hr{
+    border: none;
+    border-top: 1px solid rgb(161, 156, 156);
 }
